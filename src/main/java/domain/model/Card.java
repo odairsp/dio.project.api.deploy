@@ -1,7 +1,11 @@
 package domain.model;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
+@Setter
+@Getter
 @Entity(name = "tb_card")
 public class Card {
 
@@ -15,27 +19,4 @@ public class Card {
     @Column(name = "available_limit", scale = 13, precision = 2)
     private Number limit;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getNumber() {
-        return number;
-    }
-
-    public void setNumber(String number) {
-        this.number = number;
-    }
-
-    public Number getLimit() {
-        return limit;
-    }
-
-    public void setLimit(Number limit) {
-        this.limit = limit;
-    }
 }
