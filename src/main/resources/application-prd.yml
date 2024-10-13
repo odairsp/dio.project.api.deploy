@@ -1,0 +1,15 @@
+spring:
+  datasource:
+#    url: jdbc:postgresql://${PGHOST}:${PGPORT}:/${PGDATABASE}
+    url: jdbc:postgresql://autorack.proxy.rlwy.net:54769/railway}
+    username: postgres
+    password: zcSaRzgbOSRgicnqogIhpeVlNcjQmXvs
+#    driver-class-name: org.postgresql.Driver
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL82Dialect
+
