@@ -1,7 +1,8 @@
 spring:
   datasource:
     url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
-#    url: jdbc:postgresql://junction.proxy.rlwy.net:42399/railway
+#    url: jdbc:postgresql://junction.proxy.rlwy.net:56527/railway
+#
     username: ${PGUSER}
     password: ${PGPASSWORD}
 #    driver-class-name: org.postgresql.Driver
